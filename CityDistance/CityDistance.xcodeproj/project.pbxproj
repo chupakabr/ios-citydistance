@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EBCEF1116597838009B275B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBCEF1016597838009B275B /* UIKit.framework */; };
+		3EBCEF1316597838009B275B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBCEF1216597838009B275B /* Foundation.framework */; };
+		3EBCEF1516597838009B275B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBCEF1416597838009B275B /* CoreGraphics.framework */; };
+		3EBCEF1B16597838009B275B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF1916597838009B275B /* InfoPlist.strings */; };
+		3EBCEF1D16597838009B275B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBCEF1C16597838009B275B /* main.m */; };
+		3EBCEF2316597838009B275B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF2216597838009B275B /* Default.png */; };
+		3EBCEF2516597838009B275B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF2416597838009B275B /* Default@2x.png */; };
+		3EBCEF2716597838009B275B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF2616597838009B275B /* Default-568h@2x.png */; };
+		3EBCEF2A16597838009B275B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF2816597838009B275B /* MainStoryboard.storyboard */; };
+		3EBCEF4016597838009B275B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBCEF3F16597838009B275B /* SenTestingKit.framework */; };
+		3EBCEF4116597838009B275B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBCEF1016597838009B275B /* UIKit.framework */; };
+		3EBCEF4216597838009B275B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBCEF1216597838009B275B /* Foundation.framework */; };
+		3EBCEF4A16597838009B275B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF4816597838009B275B /* InfoPlist.strings */; };
+		3EBCEF4D16597838009B275B /* CityDistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBCEF4C16597838009B275B /* CityDistanceTests.m */; };
+		3EBCEF6916599936009B275B /* common.php in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF5A16599936009B275B /* common.php */; };
+		3EBCEF6A16599936009B275B /* get_cities_list.php in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF5B16599936009B275B /* get_cities_list.php */; };
+		3EBCEF6B16599936009B275B /* get_coord.php in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF5C16599936009B275B /* get_coord.php */; };
+		3EBCEF6C16599936009B275B /* get_distance.php in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF5D16599936009B275B /* get_distance.php */; };
+		3EBCEF6D16599936009B275B /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF5E16599936009B275B /* log.txt */; };
+		3EBCEF6E16599936009B275B /* cities.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6016599936009B275B /* cities.txt */; };
+		3EBCEF6F16599936009B275B /* cities.txt.bk in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6116599936009B275B /* cities.txt.bk */; };
+		3EBCEF7016599936009B275B /* coords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6216599936009B275B /* coords.txt */; };
+		3EBCEF7116599936009B275B /* coords.txt.bk in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6316599936009B275B /* coords.txt.bk */; };
+		3EBCEF7216599936009B275B /* distance.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6416599936009B275B /* distance.txt */; };
+		3EBCEF7316599936009B275B /* distance.txt.bk in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6516599936009B275B /* distance.txt.bk */; };
+		3EBCEF7416599936009B275B /* distance.txt.bk2 in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6616599936009B275B /* distance.txt.bk2 */; };
+		3EBCEF7516599936009B275B /* proxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6716599936009B275B /* proxy.txt */; };
+		3EBCEF7616599936009B275B /* proxy.txt.old in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF6816599936009B275B /* proxy.txt.old */; };
+		3EBCEF8216599A41009B275B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF7E16599A41009B275B /* first.png */; };
+		3EBCEF8316599A41009B275B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF7F16599A41009B275B /* first@2x.png */; };
+		3EBCEF8416599A41009B275B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF8016599A41009B275B /* second.png */; };
+		3EBCEF8516599A41009B275B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCEF8116599A41009B275B /* second@2x.png */; };
+		3EBCEF8816599A6E009B275B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBCEF8716599A6E009B275B /* AppDelegate.m */; };
+		3EBCEF8D16599A75009B275B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBCEF8A16599A75009B275B /* FirstViewController.m */; };
+		3EBCEF8E16599A75009B275B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBCEF8C16599A75009B275B /* SecondViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EBCEF4316597838009B275B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EBCEF0316597837009B275B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EBCEF0B16597838009B275B;
+			remoteInfo = CityDistance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EBCEF0C16597838009B275B /* CityDistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityDistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBCEF1016597838009B275B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3EBCEF1216597838009B275B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3EBCEF1416597838009B275B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3EBCEF1816597838009B275B /* CityDistance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CityDistance-Info.plist"; sourceTree = "<group>"; };
+		3EBCEF1A16597838009B275B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3EBCEF1C16597838009B275B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3EBCEF1E16597838009B275B /* CityDistance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CityDistance-Prefix.pch"; sourceTree = "<group>"; };
+		3EBCEF2216597838009B275B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3EBCEF2416597838009B275B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3EBCEF2616597838009B275B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3EBCEF2916597838009B275B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		3EBCEF3E16597838009B275B /* CityDistanceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityDistanceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBCEF3F16597838009B275B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3EBCEF4716597838009B275B /* CityDistanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CityDistanceTests-Info.plist"; sourceTree = "<group>"; };
+		3EBCEF4916597838009B275B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3EBCEF4B16597838009B275B /* CityDistanceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityDistanceTests.h; sourceTree = "<group>"; };
+		3EBCEF4C16597838009B275B /* CityDistanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityDistanceTests.m; sourceTree = "<group>"; };
+		3EBCEF5A16599936009B275B /* common.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = common.php; sourceTree = "<group>"; };
+		3EBCEF5B16599936009B275B /* get_cities_list.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = get_cities_list.php; sourceTree = "<group>"; };
+		3EBCEF5C16599936009B275B /* get_coord.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = get_coord.php; sourceTree = "<group>"; };
+		3EBCEF5D16599936009B275B /* get_distance.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = get_distance.php; sourceTree = "<group>"; };
+		3EBCEF5E16599936009B275B /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log.txt; sourceTree = "<group>"; };
+		3EBCEF6016599936009B275B /* cities.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cities.txt; sourceTree = "<group>"; };
+		3EBCEF6116599936009B275B /* cities.txt.bk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cities.txt.bk; sourceTree = "<group>"; };
+		3EBCEF6216599936009B275B /* coords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coords.txt; sourceTree = "<group>"; };
+		3EBCEF6316599936009B275B /* coords.txt.bk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coords.txt.bk; sourceTree = "<group>"; };
+		3EBCEF6416599936009B275B /* distance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = distance.txt; sourceTree = "<group>"; };
+		3EBCEF6516599936009B275B /* distance.txt.bk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = distance.txt.bk; sourceTree = "<group>"; };
+		3EBCEF6616599936009B275B /* distance.txt.bk2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = distance.txt.bk2; sourceTree = "<group>"; };
+		3EBCEF6716599936009B275B /* proxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.txt; sourceTree = "<group>"; };
+		3EBCEF6816599936009B275B /* proxy.txt.old */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.txt.old; sourceTree = "<group>"; };
+		3EBCEF7E16599A41009B275B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		3EBCEF7F16599A41009B275B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		3EBCEF8016599A41009B275B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		3EBCEF8116599A41009B275B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		3EBCEF8616599A6E009B275B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EBCEF8716599A6E009B275B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3EBCEF8916599A75009B275B /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		3EBCEF8A16599A75009B275B /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		3EBCEF8B16599A75009B275B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		3EBCEF8C16599A75009B275B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EBCEF0916597838009B275B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBCEF1116597838009B275B /* UIKit.framework in Frameworks */,
+				3EBCEF1316597838009B275B /* Foundation.framework in Frameworks */,
+				3EBCEF1516597838009B275B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EBCEF3A16597838009B275B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBCEF4016597838009B275B /* SenTestingKit.framework in Frameworks */,
+				3EBCEF4116597838009B275B /* UIKit.framework in Frameworks */,
+				3EBCEF4216597838009B275B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EBCEF0116597837009B275B = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF1616597838009B275B /* CityDistance */,
+				3EBCEF4516597838009B275B /* CityDistanceTests */,
+				3EBCEF0F16597838009B275B /* Frameworks */,
+				3EBCEF0D16597838009B275B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EBCEF0D16597838009B275B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF0C16597838009B275B /* CityDistance.app */,
+				3EBCEF3E16597838009B275B /* CityDistanceTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EBCEF0F16597838009B275B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF1016597838009B275B /* UIKit.framework */,
+				3EBCEF1216597838009B275B /* Foundation.framework */,
+				3EBCEF1416597838009B275B /* CoreGraphics.framework */,
+				3EBCEF3F16597838009B275B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EBCEF1616597838009B275B /* CityDistance */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF77165999A9009B275B /* res */,
+				3EBCEF5616599936009B275B /* src */,
+				3EBCEF5916599936009B275B /* scripts */,
+				3EBCEF1716597838009B275B /* Supporting Files */,
+			);
+			path = CityDistance;
+			sourceTree = "<group>";
+		};
+		3EBCEF1716597838009B275B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF1816597838009B275B /* CityDistance-Info.plist */,
+				3EBCEF1916597838009B275B /* InfoPlist.strings */,
+				3EBCEF1C16597838009B275B /* main.m */,
+				3EBCEF1E16597838009B275B /* CityDistance-Prefix.pch */,
+				3EBCEF2216597838009B275B /* Default.png */,
+				3EBCEF2416597838009B275B /* Default@2x.png */,
+				3EBCEF2616597838009B275B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EBCEF4516597838009B275B /* CityDistanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF4B16597838009B275B /* CityDistanceTests.h */,
+				3EBCEF4C16597838009B275B /* CityDistanceTests.m */,
+				3EBCEF4616597838009B275B /* Supporting Files */,
+			);
+			path = CityDistanceTests;
+			sourceTree = "<group>";
+		};
+		3EBCEF4616597838009B275B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF4716597838009B275B /* CityDistanceTests-Info.plist */,
+				3EBCEF4816597838009B275B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EBCEF5616599936009B275B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF5716599936009B275B /* main */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		3EBCEF5716599936009B275B /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF7B165999D5009B275B /* obj-c */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		3EBCEF5916599936009B275B /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF5A16599936009B275B /* common.php */,
+				3EBCEF5B16599936009B275B /* get_cities_list.php */,
+				3EBCEF5C16599936009B275B /* get_coord.php */,
+				3EBCEF5D16599936009B275B /* get_distance.php */,
+				3EBCEF5E16599936009B275B /* log.txt */,
+				3EBCEF5F16599936009B275B /* out */,
+				3EBCEF6716599936009B275B /* proxy.txt */,
+				3EBCEF6816599936009B275B /* proxy.txt.old */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		3EBCEF5F16599936009B275B /* out */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF6016599936009B275B /* cities.txt */,
+				3EBCEF6116599936009B275B /* cities.txt.bk */,
+				3EBCEF6216599936009B275B /* coords.txt */,
+				3EBCEF6316599936009B275B /* coords.txt.bk */,
+				3EBCEF6416599936009B275B /* distance.txt */,
+				3EBCEF6516599936009B275B /* distance.txt.bk */,
+				3EBCEF6616599936009B275B /* distance.txt.bk2 */,
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		3EBCEF77165999A9009B275B /* res */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF2816597838009B275B /* MainStoryboard.storyboard */,
+				3EBCEF78165999A9009B275B /* bg */,
+				3EBCEF79165999A9009B275B /* btn */,
+				3EBCEF7A165999A9009B275B /* unsorted */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		3EBCEF78165999A9009B275B /* bg */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bg;
+			sourceTree = "<group>";
+		};
+		3EBCEF79165999A9009B275B /* btn */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF7E16599A41009B275B /* first.png */,
+				3EBCEF7F16599A41009B275B /* first@2x.png */,
+				3EBCEF8016599A41009B275B /* second.png */,
+				3EBCEF8116599A41009B275B /* second@2x.png */,
+			);
+			path = btn;
+			sourceTree = "<group>";
+		};
+		3EBCEF7A165999A9009B275B /* unsorted */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = unsorted;
+			sourceTree = "<group>";
+		};
+		3EBCEF7B165999D5009B275B /* obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF7C165999EE009B275B /* app */,
+				3EBCEF7D165999EE009B275B /* ui */,
+			);
+			path = "obj-c";
+			sourceTree = "<group>";
+		};
+		3EBCEF7C165999EE009B275B /* app */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF8616599A6E009B275B /* AppDelegate.h */,
+				3EBCEF8716599A6E009B275B /* AppDelegate.m */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		3EBCEF7D165999EE009B275B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				3EBCEF8916599A75009B275B /* FirstViewController.h */,
+				3EBCEF8A16599A75009B275B /* FirstViewController.m */,
+				3EBCEF8B16599A75009B275B /* SecondViewController.h */,
+				3EBCEF8C16599A75009B275B /* SecondViewController.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EBCEF0B16597838009B275B /* CityDistance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EBCEF5016597838009B275B /* Build configuration list for PBXNativeTarget "CityDistance" */;
+			buildPhases = (
+				3EBCEF0816597838009B275B /* Sources */,
+				3EBCEF0916597838009B275B /* Frameworks */,
+				3EBCEF0A16597838009B275B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityDistance;
+			productName = CityDistance;
+			productReference = 3EBCEF0C16597838009B275B /* CityDistance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EBCEF3D16597838009B275B /* CityDistanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EBCEF5316597838009B275B /* Build configuration list for PBXNativeTarget "CityDistanceTests" */;
+			buildPhases = (
+				3EBCEF3916597838009B275B /* Sources */,
+				3EBCEF3A16597838009B275B /* Frameworks */,
+				3EBCEF3B16597838009B275B /* Resources */,
+				3EBCEF3C16597838009B275B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EBCEF4416597838009B275B /* PBXTargetDependency */,
+			);
+			name = CityDistanceTests;
+			productName = CityDistanceTests;
+			productReference = 3EBCEF3E16597838009B275B /* CityDistanceTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EBCEF0316597837009B275B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Valeriy Chevtaev";
+			};
+			buildConfigurationList = 3EBCEF0616597837009B275B /* Build configuration list for PBXProject "CityDistance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3EBCEF0116597837009B275B;
+			productRefGroup = 3EBCEF0D16597838009B275B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EBCEF0B16597838009B275B /* CityDistance */,
+				3EBCEF3D16597838009B275B /* CityDistanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EBCEF0A16597838009B275B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBCEF1B16597838009B275B /* InfoPlist.strings in Resources */,
+				3EBCEF2316597838009B275B /* Default.png in Resources */,
+				3EBCEF2516597838009B275B /* Default@2x.png in Resources */,
+				3EBCEF2716597838009B275B /* Default-568h@2x.png in Resources */,
+				3EBCEF2A16597838009B275B /* MainStoryboard.storyboard in Resources */,
+				3EBCEF6916599936009B275B /* common.php in Resources */,
+				3EBCEF6A16599936009B275B /* get_cities_list.php in Resources */,
+				3EBCEF6B16599936009B275B /* get_coord.php in Resources */,
+				3EBCEF6C16599936009B275B /* get_distance.php in Resources */,
+				3EBCEF6D16599936009B275B /* log.txt in Resources */,
+				3EBCEF6E16599936009B275B /* cities.txt in Resources */,
+				3EBCEF6F16599936009B275B /* cities.txt.bk in Resources */,
+				3EBCEF7016599936009B275B /* coords.txt in Resources */,
+				3EBCEF7116599936009B275B /* coords.txt.bk in Resources */,
+				3EBCEF7216599936009B275B /* distance.txt in Resources */,
+				3EBCEF7316599936009B275B /* distance.txt.bk in Resources */,
+				3EBCEF7416599936009B275B /* distance.txt.bk2 in Resources */,
+				3EBCEF7516599936009B275B /* proxy.txt in Resources */,
+				3EBCEF7616599936009B275B /* proxy.txt.old in Resources */,
+				3EBCEF8216599A41009B275B /* first.png in Resources */,
+				3EBCEF8316599A41009B275B /* first@2x.png in Resources */,
+				3EBCEF8416599A41009B275B /* second.png in Resources */,
+				3EBCEF8516599A41009B275B /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EBCEF3B16597838009B275B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBCEF4A16597838009B275B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EBCEF3C16597838009B275B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EBCEF0816597838009B275B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBCEF1D16597838009B275B /* main.m in Sources */,
+				3EBCEF8816599A6E009B275B /* AppDelegate.m in Sources */,
+				3EBCEF8D16599A75009B275B /* FirstViewController.m in Sources */,
+				3EBCEF8E16599A75009B275B /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EBCEF3916597838009B275B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBCEF4D16597838009B275B /* CityDistanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EBCEF4416597838009B275B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EBCEF0B16597838009B275B /* CityDistance */;
+			targetProxy = 3EBCEF4316597838009B275B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EBCEF1916597838009B275B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EBCEF1A16597838009B275B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3EBCEF2816597838009B275B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EBCEF2916597838009B275B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3EBCEF4816597838009B275B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EBCEF4916597838009B275B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EBCEF4E16597838009B275B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3EBCEF4F16597838009B275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EBCEF5116597838009B275B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityDistance/CityDistance-Prefix.pch";
+				INFOPLIST_FILE = "CityDistance/CityDistance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3EBCEF5216597838009B275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityDistance/CityDistance-Prefix.pch";
+				INFOPLIST_FILE = "CityDistance/CityDistance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3EBCEF5416597838009B275B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CityDistance.app/CityDistance";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityDistance/CityDistance-Prefix.pch";
+				INFOPLIST_FILE = "CityDistanceTests/CityDistanceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3EBCEF5516597838009B275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CityDistance.app/CityDistance";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityDistance/CityDistance-Prefix.pch";
+				INFOPLIST_FILE = "CityDistanceTests/CityDistanceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EBCEF0616597837009B275B /* Build configuration list for PBXProject "CityDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EBCEF4E16597838009B275B /* Debug */,
+				3EBCEF4F16597838009B275B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EBCEF5016597838009B275B /* Build configuration list for PBXNativeTarget "CityDistance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EBCEF5116597838009B275B /* Debug */,
+				3EBCEF5216597838009B275B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3EBCEF5316597838009B275B /* Build configuration list for PBXNativeTarget "CityDistanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EBCEF5416597838009B275B /* Debug */,
+				3EBCEF5516597838009B275B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EBCEF0316597837009B275B /* Project object */;
+}
